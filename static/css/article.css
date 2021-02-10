@@ -1,0 +1,48 @@
+section {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    justify-content: center;
+}
+
+#share_images {
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5%;
+}
+
+#share_images>img {
+    width: 250px;
+    height: 50px;
+}
+
+article {
+    width: 80%;
+    display: flex;
+    margin-top: 5%;
+    flex-direction: column;
+    align-items: center;
+}
+
+article>img {
+    width: 500px;
+    height: 350px;
+}
+
+#author {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: -85%;
+}
+
+#content {
+    margin-top: 10%;
+    font-size: 1.5rem;
+    margin-bottom: 10%;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
