@@ -29,6 +29,8 @@ function postLogin() {
                         console.log(data);
                         window.localStorage.setItem('email', email);
                         window.localStorage.setItem('mps', mps);
+                        window.localStorage.setItem('token', data.token);
+                        
                     }
                 })
 
