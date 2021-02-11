@@ -10,58 +10,122 @@
 </head>
 
 <body>
+    <header>
+        <div id="banner">
 
 
+            <img src="../images/SimplonNews.png" alt="banner">
 
-    <section class="formulaire">
-        <form class="form1">
-            <!-- inscriez vous -->
+        </div>
 
-            <inscriez-vous class="inscription">Inscriez-vous</inscriez-vous><br>
+        <nav id="nav">
+            <ul>
+                <li class="logo"><img src="../images/simplonlogo.png" alt="logo"></li>
+                <li><a class="linknav " href="./index.html">ACCUEIL</a></li>
+                <li><a class="linknav active" href="#formulaire">CONNECTEZ-VOUS</a></li>
 
-            <label aria-label="écrire le name" for="nom"><b>Nom d'utilisateur</b></label>
-            <input aria-label="écrire le name" type="text" placeholder="saisissez votre nom " aria-describedby="nom" id="nom" required>
-            <label aria-label="écrire l'émail" for="email">Émail</label>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section id="formulaire" class="formulaire">
+        <form class="form1" onsubmit="return false" id="myform1">
+            <!-- inscrivez vous -->
+
+            <inscriez-vous class="inscription">Se connecter</inscriez-vous><br>
+
+
+            <label aria-label="écrire l'émail" for="email">Mail</label>
             <input aria-label="écrire l'émail" type="email" aria-describedby="email" id="email" placeholder="sophie@example.com" required>
             <label aria-label="écrire le mot de passe" for="psw"><b>Mot de passe</b></label>
             <input type="password" placeholder="Entrez mot de passe" id="psw" minlength="8" required aria-describedby="psw">
-
-            <button>S'identifier</button>
-            <label aria-label="se souvenir" for="rappeler">
+            <!-- :on click sur le button pour activer le post login et récuperer le mail et mps -->
+            <button onclick="postLogin()">S'identifier</button>
+            <div class="souvenir">
+                <label aria-label="se souvenir" for="rappeler">
             <input  type="checkbox" checked="checked"  aria-label="se souvenir" id = "rappeler" > Souvenir de mot de passe
           </label>
+                <span class="psw"> <a href="#">Mot de passe oublié?</a></span>
+                <button aria-label="annuler" class="annuler">Annuler</button>
 
-            <button aria-label="annuler" class="annuler">Annuler</button>
-            <span class="psw"> <a href="#">Mot de passe oublié?</a></span>
-
+            </div>
         </form>
         <p>Ou</p>
-        <!-- //abbonez vous -->
-        <form class="form2">
+        <!-- //abonnez vous -->
+        <form class="form2" onsubmit="return false">
 
             <Abbonez-vous class="inscription"> Abonnez-vous</Abbonez-vous><br>
-            <label aria-label="écrire le name" for="nommer"><b>Nom d'utilisateur</b></label>
+            <div id="message"></div>
+            <label aria-label="écrire le name" for="nommer"><b>Nom </b></label>
             <input aria-label="écrire le name" type="text" placeholder="saisissez votre nom " aria-describedby="nommer" id="nommer" required>
             <label aria-label="écrire le second name" for="second">Prénom </label>
             <input aria-label="écrire le second name" pattern="[a-z,A-Z]{1,30}" type="text" aria-describedby=" second" id="second" placeholder="Prénom">
-            <label aria-label="écrire l'émail" for="connecter">Émail</label>
+            <label aria-label="écrire l'émail" for="connecter">Mail</label>
             <input aria-label="écrire l'émail" type="email" aria-describedby="connecter" id="connecter" placeholder="sophie@example.com" required>
             <label aria-label="écrire le mot de passe" for="mps"><b>Mot de passe</b></label>
             <input type="password" placeholder="Entrez mot de passe " id="mps" minlength="8" required aria-describedby="mps">
-            <button>S'abonner</button>
-            <label aria-label="se souvenir" for="souvenir">
+            <button onclick="postUsers()">S'abonner</button>
+            <div class="souvenir">
+                <label aria-label="se souvenir" for="souvenir">
             <input type="checkbox" aria-describedby="souvenir" checked="checked"  id = "souvenir" > Souvenir de mot de passe
           </label>
+                <span class="psw"> <a href="# ">Mot de passe oublié?</a></span>
+                <button aria-label="annuler" class="annuler">Annuler</button>
 
-            <button aria-label="annuler" class="annuler">Annuler</button>
-            <span class="psw"> <a href="# ">Mot de passe oublié?</a></span>
-
+            </div>
         </form>
     </section>
 
 
+    <div id="container">
+        <div id="main">
 
+        </div>
+    </div>
+    <footer>
+        <section class="footerTop">
 
+            <div class="footer-left">
+                <h3>A propos de nous</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis deserunt totam ab non. Incidunt ratione, debitis eaque quae provident, et, magni dolores unde veritatis reiciendis aliquam. Doloremque rem natus praesentium.</p>
+
+            </div>
+
+            <div class="footer-right">
+                <h3>suivez-nous</h3>
+                <ul class="socials">
+                    <li>
+                        <a href="#"><img class="facebook" src="../image/facebook.png" alt="facebook"></img>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><img class="instagram" src="../image/instagram.png" alt="instagram"></img>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><img class="linkdlin" src="../image/linkedlin.png" alt="linkdlin"></img>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><img class="youtube" src="../image/youtube.png" alt="youtube"></img>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><img class="twitter" src="../image/twitter.png" alt="twitter"></img>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+        <div class="footer-bottom">
+            <p>copyright &copy;2021. designed by <span>Zeliha,SamiraandJerome</span></p>
+        </div>
+
+    </footer>
+
+    <script src="../js/login.js"></script>
 </body>
 
 </html>
