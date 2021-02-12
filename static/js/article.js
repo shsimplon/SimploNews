@@ -57,75 +57,115 @@
 //getArticle(1);
 
 
-// function getArticle(pid) {
-//     let xtoken;
-//     let fetch_config = {
-//         method: "POST",
-//         headers: {
-//             "Content-Type": "application/json"
-//         },
-//         body: JSON.stringify({ "email": "test@test.fr", "password": "test1234" })
-//     };
-//     fetch("https://simplonews.brianboudrioux.fr/users/login", fetch_config)
-//         .then(function(response) {
-//             return response.json()
-//                 .then(function(data) {
 
-
-//                     if (response.error == 400)
-//                         console.log(data);
-//                     else {
-//                         console.log(data);
-//                         xtoken = data.token;
-//                         // return data.token;
-
-
-//                         let config = {
-//                             method: "GET",
-//                             headers: {
-//                                 "Authorization": "Bearer " + xtoken
-//                             }
-
-//                         };
-//                         fetch("https://simplonews.brianboudrioux.fr/articles/" + pid, config).then(function(response) {
-//                             response.json().then(function(articles) {
-//                                 if (response.error == 400)
-//                                     console.log(articles);
-//                                 else {
-//                                     console.log(articles);
-//                                 }
-
-//                             }).catch(function(error) {
-//                                 console.log(error);
-//                             })
-
-//                         }).catch(function(error) {
-//                             console.log(error);
-
-//                         })
+function createArticle(particle) {
+    console.log(window.localStorage.getItem(token));
+}
 
 
 
+window.addEventListener("load", function() {
+
+    // if(window.localStorage.getItem(token)){
+
+    // }
+
+    //token control
+});
 
 
-//                     }
-//                 })
-//                 .catch(function(error) {
-//                     console.log(error);
-//                 })
-
-//         }).catch(function(error) {
-//             console.log(error);
-//         })
-
-
-
-
-
-
+function getArticle(pid) {
+    let xtoken;
+    let fetch_config = {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ "email": "test@test.fr", "password": "test1234" })
+    };
+    fetch("https://simplonews.brianboudrioux.fr/users/login", fetch_config)
+        .then(function(response) {
+            return response.json()
+                .then(function(data) {
 
 
-// }
+                    if (response.error == 400)
+                        console.log(data);
+                    else {
+                        console.log(data);
+                        xtoken = data.token;
+                        // return data.token;
+                        //  window.localStorage.setItem("token", xtoken);
+                        //createArticle();
+
+                        let config = {
+                            method: "GET",
+                            headers: {
+                                "Authorization": "Bearer " + xtoken
+                            }
+
+                        };
+                        fetch("https://simplonews.brianboudrioux.fr/articles/" + pid, config).then(function(response) {
+                            response.json().then(function(articles) {
+                                if (response.error == 400)
+                                    console.log(articles);
+                                else {
+
+                                    console.log(articles.article);
+
+                                    // createArticle(articles.getArticle);
+
+                                    let elTitle = document.getElementById("title");
+                                    console.log(elTitle);
+                                    elTitle.innerText = articles.article.title;
+                                    let elImage = document.getElementById("article_image");
+                                    elImage.setAttribute("src", articles.article.img);
+                                    let elAuthor = document.getElementById(("author"));
+                                    elAuthor.innerText = articles.article.author;
+                                    let elResume = document.getElementById("resume");
+                                    elResume.innerText = articles.article.resume;
+                                    let elContent = document.getElementById("content");
+                                    elContent.innerText = articles.article.content;
+
+
+
+
+
+
+                                }
+
+
+                            }).catch(function(error) {
+                                console.log(error);
+                            })
+
+                        }).catch(function(error) {
+                            console.log(error);
+
+                        })
+
+
+
+
+
+                    }
+                })
+                .catch(function(error) {
+                    console.log(error);
+                })
+
+        }).catch(function(error) {
+            console.log(error);
+        })
+
+
+
+
+
+
+
+
+}
 
 
 
@@ -168,55 +208,4 @@
 
 // }
 
-//getArticle(1);
-
-
-function user_login() {
-
-    let config = {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-
-        body: JSON.stringify({ "email": "test@test.fr", "password": "test1234" })
-    };
-
-    fetch("https://simplonews.brianboudrioux.fr/users/login", config)
-        .then(function(reponse) {
-            if (reponse.status == 400) {
-                //error user ou pass
-                console.log(reponse);
-            } else {
-                // reussi
-                reponse.json().then(function(data) {
-                        if (data.error) {
-                            //un error
-                            console.log(data.error);
-                        } else {
-                            //reussi
-                            console.log(data.token);
-
-
-                        }
-
-
-
-                    })
-                    .catch(function(error) {
-                        console.log(error);
-                    })
-
-
-
-            }
-
-
-        })
-        .catch(function(error) {
-            console.log(error);
-        })
-
-
-
-}
-
-user_login();
+getArticle(1);
