@@ -2,6 +2,9 @@
 function postLogin() {
     let email = document.getElementById('email').value;
     let mps = document.getElementById('psw').value;
+    let div = document.getElementById('message1');
+    div.style.color = "#C32336";
+    div.style.size = '1rem';
 
 
     let fetch_congig = {
@@ -23,9 +26,12 @@ function postLogin() {
     .then(function(response) {
             return response.json()
                 .then(function(data) {
-                    if (response.status == 400)
+                    if (response.status == 400) {
+
+
                         console.log(data);
-                    else {
+                        div.innerHTML = data.error;
+                    } else {
                         console.log(data);
                         window.localStorage.setItem('email', email);
                         window.localStorage.setItem('mps', mps);

@@ -37,16 +37,17 @@
 
                              `  <article class="firstSection">
                 <figure class="bulleArticle1"> 
-                       
+                <div class="divImage">
                              <img src="${article.articles[i].img}" alt="imagearticle"> 
-                       
+                             <p class="category">${article.articles[i].Category.name}</p>
+                       </div>
 
                          
                 <figcaption>
 
-                ${article.articles[i].title}
+               <h3> ${article.articles[i].title}</h3>
                 ${article.articles[i].resume}
-                ${article.articles[i].author}
+               
                 </figcaption>
                 <div class="lirePlus">
                     <p>
@@ -63,16 +64,17 @@
 
                                  `
 <figure class="bulleArticle1"> 
-      
+<div class="divImage">
             <img src="${article.articles[i+1].img}" alt="imagearticle"> 
       
-
+            <p class="category">${article.articles[i+1].Category.name}</p>
+            </div>
         
 <figcaption>
 
-${article.articles[i+1].title}
+<h3>${article.articles[i+1].title}</h3>
 ${article.articles[i+1].resume}
-${article.articles[i+1].author}
+
 </figcaption>
 <div class="lirePlus">
    <p>
@@ -93,7 +95,7 @@ ${article.articles[i+1].author}
 
 
 
-                         console.log(text);
+
                      }
 
                      newsSimplon.innerHTML = text
