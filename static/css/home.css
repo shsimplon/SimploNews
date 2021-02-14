@@ -212,7 +212,7 @@
             .slideshow-container {
                 max-width: 1000px;
                 /* position: relative; */
-                margin: auto;
+                margin-left: 31%;
             }
             /* Next & previous buttons */
             
@@ -229,7 +229,7 @@
                 border-radius: 0 3px 3px 0;
                 background-color: #C32336;
                 user-select: none;
-                margin-left: 45%;
+                margin-left: 41%;
             }
             
             .next {
