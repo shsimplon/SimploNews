@@ -1,0 +1,57 @@
+html {
+    font-size: 62.5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    justify-content: center;
+}
+
+#share_images {
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5%;
+}
+
+#share_images>img {
+    width: 250px;
+    height: 50px;
+}
+
+article {
+    width: 80%;
+    display: flex;
+    margin-top: 5%;
+    flex-direction: column;
+    align-items: center;
+}
+
+article>img {
+    /* align-content: stretch;
+    margin: 1rem 1rem 1rem 1rem; */
+    width: 50%;
+}
+
+#author {
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+#content {
+    margin-top: 5%;
+    font-size: 1.5rem;
+    margin-bottom: 5%;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}

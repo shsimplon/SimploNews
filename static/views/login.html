@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="../images/simplonlogo.png" />
+    <title>SimploNews</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div id="banner">
+
+
+            <img src="../images/SimplonNews.png" alt="banner">
+
+        </div>
+
+        <nav id="nav">
+            <ul>
+                <a href="#" class="alogo"><img class="logo" src="../images/simplonlogo.png" alt="logo"></a>
+                <!-- <li><a class="linknav " href="./home.html">ACCUEIL</a></li> -->
+                <li><a class="linknav active" href="#formulaire">CONNECTEZ-VOUS</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+
+    <section id="formulaire" class="formulaire">
+        <form class="form1" onsubmit="return false" id="myform1">
+            <!-- inscrivez vous -->
+
+            <inscriez-vous class="inscription">Se connecter</inscriez-vous><br>
+            <div id="message1"></div>
+
+            <label aria-label="écrire l'émail" for="email">Mail</label>
+            <input aria-label="écrire l'émail" type="email" aria-describedby="email" id="email" placeholder="sophie@example.com" required>
+            <label aria-label="écrire le mot de passe" for="psw">Mot de passe</label>
+            <input type="password" placeholder="Entrez mot de passe" id="psw" required aria-describedby="psw">
+            <!-- :on click sur le button pour activer le post login et récuperer le mail et mps -->
+            <button onclick="postLogin()">S'identifier</button>
+            <div class="souvenir">
+                <label aria-label="se souvenir" for="rappeler">
+            <input  type="checkbox" checked="checked"  aria-label="se souvenir" id = "rappeler" > Souvenir de mot de passe
+          </label>
+                <span class="psw"> <a href="#">Mot de passe oublié?</a></span>
+                <button aria-label="annuler" class="annuler">Annuler</button>
+
+            </div>
+        </form>
+        <p>Ou</p>
+        <!-- //abonnez vous -->
+        <form class="form2" onsubmit="return false" id="myform2">
+
+            <Abbonez-vous class="inscription"> Abonnez-vous</Abbonez-vous><br>
+            <div id="message"></div>
+            <label aria-label="écrire le name" for="nommer">Nom</label>
+            <input aria-label="écrire le name" type="text" placeholder="saisissez votre nom " aria-describedby="nommer" id="nommer" required>
+            <label aria-label="écrire le second name" for="second">Prénom </label>
+            <input aria-label="écrire le second name" pattern="[a-z,A-Z]{1,30}" type="text" aria-describedby=" second" id="second" placeholder="Prénom">
+            <label aria-label="écrire l'émail" for="connecter">Mail</label>
+            <input aria-label="écrire l'émail" type="email" aria-describedby="connecter" id="connecter" placeholder="sophie@example.com" required>
+            <label aria-label="écrire le mot de passe" for="mps">Mot de passe</label>
+            <input type="password" placeholder="Entrez mot de passe " id="mps" aria-describedby="mps" required>
+            <button onclick="postUsers()">S'abonner</button>
+            <div class="souvenir">
+                <label aria-label="se souvenir" for="souvenir">
+            <input type="checkbox" aria-describedby="souvenir" checked="checked"  id = "souvenir" > Souvenir de mot de passe
+          </label>
+                <span class="psw"> <a href="# ">Mot de passe oublié?</a></span>
+                <button aria-label="annuler" class="annuler">Annuler</button>
+
+            </div>
+        </form>
+    </section>
+
+
+    <div id="container">
+        <div id="main">
+
+        </div>
+    </div>
+    <footer>
+        <section class="footerTop">
+
+            <div class="footer-left">
+                <h3>A propos de nous</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis deserunt totam ab non. Incidunt ratione, debitis eaque quae provident, et, magni dolores unde veritatis reiciendis aliquam. Doloremque rem natus praesentium.</p>
+
+            </div>
+
+            <div class="footer-right">
+                <h3>suivez-nous</h3>
+                <ul class="socials">
+                    <li>
+                        <a href="https://fr-fr.facebook.com/Simplon.co"><img class="facebook" src="../image/facebook.png" alt="facebook"></img>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/simploworld/?hl=fr"><img class="instagram" src="../image/instagram.png" alt="instagram"></img>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/company/simplon-co/mycompany/"><img class="linkdlin" src="../image/linkedlin.png" alt="linkdlin"></img>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCTFYd2sOfjrJH1C421UyYuQ"><img class="youtube" src="../image/youtube.png" alt="youtube"></img>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/simplonco?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img class="twitter" src="../image/twitter.png" alt="twitter"></img>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+        <div class="footer-bottom">
+            <p>copyright &copy;2021. designed by <span>Zeliha,Samira and Jerome</span></p>
+        </div>
+
+    </footer>
+
+    <script src="../js/login.js"></script>
+</body>
+
+</html>
