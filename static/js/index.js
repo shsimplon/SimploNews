@@ -1,0 +1,1 @@
+window.open("../static/views/login.html", '_self');

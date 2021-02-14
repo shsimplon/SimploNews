@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="SimploNews Article">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="../images/simplonlogo.png" />
+    <title>SimploNews</title>
+    <link rel="stylesheet" href="../css/article.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/footer.css">
+</head>
+
+<body>
+    <header>
+        <div id="banner">
+
+
+            <img src="../images/SimplonNews.png" alt="banner">
+
+        </div>
+
+        <nav id="nav">
+            <ul>
+                <a href="#" class="alogo"><img class="logo" src="../images/simplonlogo.png" alt="logo"></a>
+                <li><a class="linknav active" href="./home.html">ACCUEIL</a></li>
+                <!-- <li><a class="linknav" href="./login.html">CONNECTEZ-VOUS</a></li> -->
+                <a href="javascript:deconnecter();" id="deconnecter" class="alogo">
+                    <script>
+                        document.getElementById("deconnecter").innerText = window.localStorage.getItem('email');
+                    </script>;Deconnecter</a>
+
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1 id="title">Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
+        <div id="share_images">
+
+
+
+            <img src="../images/share_facebook.png" alt="facebook">
+            <img src="../images/share_twitter.png" alt="twitter">
+        </div>
+        <article>
+            <img id="article_image" src="../images/SimplonNews.png" alt="imageIndisponible">
+            <p id="author">Lorem ipsum</p>
+
+            <h2 id="resume">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, laboriosam! Expedita enim exercitationem dolor non nobis commodi tenetur mollitia sed harum voluptate magni placeat magnam, blanditiis provident doloremque illo iure.</h2>
+            <p id="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, quaerat, harum debitis dignissimos, dolor atque expedita voluptatem quod ad voluptates tempore nisi vel aliquid numquam repellendus earum hic iste non?Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. Neque esse provident numquam. Natus consectetur numquam in inventore, magnam maxime. Veritatis, fuga labore sequi necessitatibus soluta voluptates molestias nulla quibusdam hic. Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. Laudantium nemo odio sed cumque officiis quae, est rem excepturi omnis, consequuntur quaerat explicabo magni eos deleniti tempora impedit, blanditiis ea dolor.</p>
+
+        </article>
+    </section>
+
+    <footer>
+        <section class="footerTop">
+
+            <div class="footer-left">
+                <h3>A propos de nous</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis deserunt totam ab non. Incidunt ratione, debitis eaque quae provident, et, magni dolores unde veritatis reiciendis aliquam. Doloremque rem natus praesentium.</p>
+
+            </div>
+
+            <div class="footer-right">
+                <h3>suivez-nous</h3>
+                <ul class="socials">
+                    <li>
+                        <a href="https://fr-fr.facebook.com/Simplon.co"><img class="facebook" src="../image/facebook.png" alt="facebook"></img>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/simploworld/?hl=fr"><img class="instagram" src="../image/instagram.png" alt="instagram"></img>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/company/simplon-co/mycompany/"><img class="linkdlin" src="../image/linkedlin.png" alt="linkdlin"></img>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCTFYd2sOfjrJH1C421UyYuQ"><img class="youtube" src="../image/youtube.png" alt="youtube"></img>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/simplonco?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img class="twitter" src="../image/twitter.png" alt="twitter"></img>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+        <div class="footer-bottom">
+            <p>copyright &copy;2021. designed by <span>Zeliha,Samira and Jerome</span></p>
+        </div>
+
+    </footer>
+
+    <script src="../js/article.js"></script>
+    <script src="../js/login.js"></script>
+</body>
+
+
+</html>
