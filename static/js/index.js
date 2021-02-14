@@ -1,1 +1,1 @@
-window.open("../static/views/login.html", '_self');
+window.open("../SimploNews/static/views/login.html", '_self');
