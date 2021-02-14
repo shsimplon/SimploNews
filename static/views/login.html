@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="../images/simplonlogo.png" />
+    <title>SimploNews</title>
     <link rel="stylesheet" href="../css/login.css">
     <link rel="stylesheet" href="../css/main.css">
     <title>Document</title>
@@ -40,7 +42,7 @@
             <label aria-label="écrire l'émail" for="email">Mail</label>
             <input aria-label="écrire l'émail" type="email" aria-describedby="email" id="email" placeholder="sophie@example.com" required>
             <label aria-label="écrire le mot de passe" for="psw">Mot de passe</label>
-            <input type="password" placeholder="Entrez mot de passe" id="psw" minlength="8" required aria-describedby="psw">
+            <input type="password" placeholder="Entrez mot de passe" id="psw" required aria-describedby="psw">
             <!-- :on click sur le button pour activer le post login et récuperer le mail et mps -->
             <button onclick="postLogin()">S'identifier</button>
             <div class="souvenir">
@@ -54,7 +56,7 @@
         </form>
         <p>Ou</p>
         <!-- //abonnez vous -->
-        <form class="form2" onsubmit="return false">
+        <form class="form2" onsubmit="return false" id="myform2">
 
             <Abbonez-vous class="inscription"> Abonnez-vous</Abbonez-vous><br>
             <div id="message"></div>
@@ -65,7 +67,7 @@
             <label aria-label="écrire l'émail" for="connecter">Mail</label>
             <input aria-label="écrire l'émail" type="email" aria-describedby="connecter" id="connecter" placeholder="sophie@example.com" required>
             <label aria-label="écrire le mot de passe" for="mps">Mot de passe</label>
-            <input type="password" placeholder="Entrez mot de passe " id="mps" minlength="8" aria-describedby="mps" required>
+            <input type="password" placeholder="Entrez mot de passe " id="mps" aria-describedby="mps" required>
             <button onclick="postUsers()">S'abonner</button>
             <div class="souvenir">
                 <label aria-label="se souvenir" for="souvenir">
@@ -97,23 +99,23 @@
                 <h3>suivez-nous</h3>
                 <ul class="socials">
                     <li>
-                        <a href="#"><img class="facebook" src="../image/facebook.png" alt="facebook"></img>
+                        <a href="https://fr-fr.facebook.com/Simplon.co"><img class="facebook" src="../image/facebook.png" alt="facebook"></img>
                         </a>
                     </li>
                     <li>
-                        <a href="#"><img class="instagram" src="../image/instagram.png" alt="instagram"></img>
+                        <a href="https://www.instagram.com/simploworld/?hl=fr"><img class="instagram" src="../image/instagram.png" alt="instagram"></img>
                         </a>
                     </li>
                     <li>
-                        <a href="#"><img class="linkdlin" src="../image/linkedlin.png" alt="linkdlin"></img>
+                        <a href="https://www.linkedin.com/company/simplon-co/mycompany/"><img class="linkdlin" src="../image/linkedlin.png" alt="linkdlin"></img>
                         </a>
                     </li>
                     <li>
-                        <a href="#"><img class="youtube" src="../image/youtube.png" alt="youtube"></img>
+                        <a href="https://www.youtube.com/channel/UCTFYd2sOfjrJH1C421UyYuQ"><img class="youtube" src="../image/youtube.png" alt="youtube"></img>
                         </a>
                     </li>
                     <li>
-                        <a href="#"><img class="twitter" src="../image/twitter.png" alt="twitter"></img>
+                        <a href="https://twitter.com/simplonco?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img class="twitter" src="../image/twitter.png" alt="twitter"></img>
                         </a>
                     </li>
                 </ul>
@@ -121,7 +123,7 @@
             </div>
         </section>
         <div class="footer-bottom">
-            <p>copyright &copy;2021. designed by <span>Zeliha,SamiraandJerome</span></p>
+            <p>copyright &copy;2021. designed by <span>Zeliha,Samira and Jerome</span></p>
         </div>
 
     </footer>

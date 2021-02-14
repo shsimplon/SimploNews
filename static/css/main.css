@@ -39,6 +39,13 @@
         padding-left: 10%;
     }
     
+    #deconnecter {
+        font-size: 1.3rem;
+        color: white;
+        padding-top: 2%;
+        padding-right: 3%;
+    }
+    
     #nav {
         background: #C32336;
         width: 100%;

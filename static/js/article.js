@@ -160,4 +160,22 @@ function getParameterURL() {
 }
 
 
-getArticle(getParameterURL());
+
+
+
+window.addEventListener("load", function() {
+    console.log(window.localStorage.getItem("token"));
+    if (!window.localStorage.getItem("token")) {
+        console.log("111111111111");
+
+        window.open("../views/login.html", '_self');
+
+
+
+    } else {
+        getArticle(getParameterURL());
+
+
+    }
+
+})
