@@ -212,7 +212,7 @@
             .slideshow-container {
                 max-width: 1000px;
                 /* position: relative; */
-                margin-left: 31%;
+                margin: auto;
             }
             /* Next & previous buttons */
             
